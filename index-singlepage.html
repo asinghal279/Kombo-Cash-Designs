@@ -1,0 +1,737 @@
+﻿<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+	<title>CashGo</title>
+	<meta charset="utf-8">
+	<!--[if IE]>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<![endif]-->
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+	<link rel="stylesheet" href="css\bootstrap.min.css">
+	<link rel="stylesheet" href="css\animations.css">
+	<link rel="stylesheet" href="css\fonts.css">
+	<link rel="stylesheet" href="css\main.css" class="color-switcher-link">
+	<link rel="stylesheet" href="css\shop.css">
+	<script src="js\vendor\modernizr-2.6.2.min.js"></script>
+
+	<!--[if lt IE 9]>
+		<script src="js/vendor/html5shiv.min.js"></script>
+		<script src="js/vendor/respond.min.js"></script>
+		<script src="js/vendor/jquery-1.12.4.min.js"></script>
+	<![endif]-->
+
+</head>
+
+<body>
+	<!--[if lt IE 9]>
+		<div class="bg-danger text-center">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/" class="highlight">upgrade your browser</a> to improve your experience.</div>
+	<![endif]-->
+
+	<div class="preloader">
+		<div class="preloader_image"></div>
+	</div>
+
+	<!-- search modal -->
+	<div class="modal" tabindex="-1" role="dialog" aria-labelledby="search_modal" id="search_modal">
+		<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			<span aria-hidden="true">
+				<i class="rt-icon2-cross2"></i>
+			</span>
+		</button>
+		<div class="widget widget_search">
+			<form method="get" class="searchform search-form form-inline" action="./">
+				<div class="form-group bottommargin_0">
+					<input type="text" value="" name="search" class="form-control" placeholder="Search keyword" id="modal-search-input">
+				</div>
+				<button type="submit" class="theme_button">Search</button>
+			</form>
+		</div>
+	</div>
+
+	<!-- Unyson messages modal -->
+	<div class="modal fade" tabindex="-1" role="dialog" id="messages_modal">
+		<div class="fw-messages-wrap ls with_padding">
+			<!-- Uncomment this UL with LI to show messages in modal popup to your user: -->
+			<!--
+		<ul class="list-unstyled">
+			<li>Message To User</li>
+		</ul>
+		-->
+
+		</div>
+	</div>
+	<!-- eof .modal -->
+
+	<!-- wrappers for visual page editor and boxed version of template -->
+	<div id="canvas">
+		<div id="box_wrapper">
+
+			<!-- template sections -->
+
+			<header class="page_header header_white toggler_xs_right">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-sm-12 display_table">
+							<div class="header_left_logo display_table_cell">
+								<a href="index.htm" class="logo top_logo">
+									<img src="images\logo.png" alt="">
+								</a>
+							</div>
+
+							<div class="header_mainmenu display_table_cell text-center">
+								<!-- main nav start -->
+								<nav class="mainmenu_wrapper">
+									<ul class="mainmenu nav sf-menu">
+										<li class="active">
+											<a href="#box_wrapper">Home</a>
+											<ul>
+												<li>
+													<a href="index.html">Home</a>
+												</li>
+												<li>
+													<a href="index-slider.html">Home with slider</a>
+												</li>
+												<li>
+													<a href="index-singlepage.html">Home singlepage</a>
+												</li>
+											</ul>
+										</li>
+
+
+										<li>
+											<a href="#about">About</a>
+										</li>
+
+										<li>
+											<a href="#features">Features</a>
+										</li>
+
+										<li>
+											<a href="#pricing">Plans</a>
+										</li>
+
+										<li>
+											<a href="#testimonials">Testimonials</a>
+										</li>
+
+										<li>
+											<a href="#news">News</a>
+										</li>
+
+									</ul>
+								</nav>
+								<!-- eof main nav -->
+								<!-- header toggler -->
+								<span class="toggle_menu">
+									<span></span>
+								</span>
+							</div>
+
+							<div class="header_right_buttons display_table_cell text-right hidden-xs">
+								<p class="header-meta grey">
+                        <i class="fa fa-phone highlight" aria-hidden="true"></i>
+                        <strong>1-888</strong>-123-4567
+                    </p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</header>
+
+
+			<section id="loan-app" class="ds color background_cover background_overlay page_contact section_padding_top_150 section_padding_bottom_150 followed_content_overlap">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-12 text-center">
+							<h2 class="section_header bottommargin_25">
+								<span class="small">Start your</span>
+								Loan Application
+							</h2>
+
+							<form class="loan-form row" method="post" action="./">
+								<div class="col-sm-4">
+									<div class="loan-form-name">
+										<label for="name" class="sr-only">Full Name
+											<span class="required">*</span>
+										</label>
+										<input type="text" aria-required="true" size="30" value="" name="name" id="name" class="form-control" placeholder="Full Name">
+									</div>
+								</div>
+								<div class="col-sm-4">
+									<div class="loan-form-birth-date">
+										<label for="birth-date" class="sr-only">Birth Date
+											<span class="required">*</span>
+										</label>
+										<input type="text" onfocus="(this.type='date')" aria-required="true" size="30" value="" name="birth-date" id="birth-date" class="form-control" placeholder="Birth Date">
+									</div>
+								</div>
+								<div class="col-sm-4">
+									<div class="loan-form-ssn">
+										<label for="ssn" class="sr-only">SSN
+											<span class="required">*</span>
+										</label>
+										<input type="number" aria-required="true" size="30" value="" name="ssn" id="ssn" class="form-control" placeholder="SSN">
+									</div>
+								</div>
+								<div class="col-sm-4">
+									<div class="loan-form-phone">
+										<label for="phone" class="sr-only">Phone Number
+											<span class="required">*</span>
+										</label>
+										<input type="tel" aria-required="true" size="30" value="" name="phone" id="phone" class="form-control" placeholder="Phone Number">
+									</div>
+								</div>
+								<div class="col-sm-4">
+									<div class="loan-form-email">
+										<label for="email" class="sr-only">Email address
+											<span class="required">*</span>
+										</label>
+										<input type="email" aria-required="true" size="30" value="" name="email" id="email" class="form-control" placeholder="Email Address">
+									</div>
+								</div>
+								<div class="col-sm-4">
+									<div class="form-group select-group">
+										<label for="state" class="sr-only">State</label>
+										<select id="state" name="state" class="choice empty form-control">
+											<option value="" disabled="" selected="" data-default="">State</option>
+											<option value="state_1">State 1</option>
+											<option value="state_2">State 2</option>
+											<option value="state_3">State 3</option>
+										</select>
+										<i class="fa fa-angle-down theme_button" aria-hidden="true"></i>
+									</div>
+								</div>
+								<div class="col-sm-4">
+									<div class="loan-form-city">
+										<label for="city" class="sr-only">City
+											<span class="required">*</span>
+										</label>
+										<input type="text" aria-required="true" size="30" value="" name="city" id="city" class="form-control" placeholder="City">
+									</div>
+								</div>
+								<div class="col-sm-4">
+									<div class="loan-form-address">
+										<label for="address" class="sr-only">Address
+											<span class="required">*</span>
+										</label>
+										<input type="text" aria-required="true" size="30" value="" name="address" id="address" class="form-control" placeholder="Address">
+									</div>
+								</div>
+								<div class="col-sm-4">
+									<div class="loan-form-zipcode">
+										<label for="zipcode" class="sr-only">Zip code
+											<span class="required">*</span>
+										</label>
+										<input type="number" aria-required="true" size="30" value="" name="zipcode" id="zipcode" class="form-control" placeholder="Zip code">
+									</div>
+								</div>
+								<div class="col-sm-12">
+									<div class="loan-form-submit topmargin_20">
+										<button type="submit" id="loan_form_submit" name="loan_submit" class="theme_button color1 wide_button">Submit</button>
+									</div>
+								</div>
+							</form>
+
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section id="about" class="ls section_padding_top_10 section_padding_bottom_20 top_offset_content columns_margin_top_20">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-3 col-sm-6">
+							<div class="teaser main_bg_color text-center rounded">
+								<div class="teaser_icon size_small">
+									<i class="fa fa-diamond" aria-hidden="true"></i>
+								</div>
+								<h3 class="numbered">
+									<span class="number">
+										01
+									</span>
+									<a href="#">
+							Easy &amp; Secure
+						</a>
+								</h3>
+								<p>Lorem ipsum dolor sit amet consetetur sadipscing elitr, sed diam nonumy.</p>
+							</div>
+						</div>
+
+						<div class="col-lg-3 col-sm-6">
+							<div class="teaser main_bg_color2 text-center rounded">
+								<div class="teaser_icon size_small">
+									<i class="fa fa-tachometer" aria-hidden="true"></i>
+								</div>
+								<h3 class="numbered">
+									<span class="number">
+										02
+									</span>
+									<a href="#">
+							Quick Money
+						</a>
+								</h3>
+								<p>Eirmod tempor invidunt utlabore et dolhjore magna aliquyam erat.</p>
+							</div>
+						</div>
+
+						<div class="col-lg-3 col-sm-6">
+							<div class="teaser main_bg_color3 text-center rounded">
+								<div class="teaser_icon size_small">
+									<i class="fa fa-money" aria-hidden="true"></i>
+								</div>
+								<h3 class="numbered">
+									<span class="number">
+										03
+									</span>
+									<a href="#">
+							Up to $100k
+						</a>
+								</h3>
+								<p>Ded diam voluptua. At vero eos et accusam et justo duo dolores.</p>
+							</div>
+						</div>
+
+						<div class="col-lg-3 col-sm-6">
+							<div class="teaser main_bg_color4 text-center rounded">
+								<div class="teaser_icon size_small">
+									<i class="fa fa-clock-o" aria-hidden="true"></i>
+								</div>
+								<h3 class="numbered">
+									<span class="number">
+										04
+									</span>
+									<a href="#">
+							Up to 5 Years
+						</a>
+								</h3>
+								<p>Stet clita kasd gubergren, no sea takimata sanctus est lorem ipsum dolor.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="ls section_padding_top_100 section_padding_bottom_150">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-12 text-center">
+							<h2 class="section_header">
+								<span class="small">Getting Cash is</span>
+								Easy with CashGo
+							</h2>
+							<p class="fontsize_20">It may look like CashGo is just in the business of loans on car titles. But for us, it’s much deeper than that. Our goal is to help you get the cash you need right when you need it most.</p>
+							<p class="topmargin_50">
+					<a href="about.html" class="theme_button color1 wide_button">About us</a>
+				</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section id="features" class="cs light background_cover page_features section_padding_top_150 section_padding_bottom_150">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-6 col-md-offset-6">
+							<h2 class="section_header">
+								<span class="small">Stunning Repayment Flexibility</span>
+								for Your Loan
+							</h2>
+							<div class="teaser media">
+								<div class="media-left media-middle">
+									<div class="teaser_icon main_bg_color small_icon rounded">
+										<i class="fa fa-calendar"></i>
+									</div>
+								</div>
+								<div class="media-body media-middle">
+									<p class="fontsize_20">
+							Choose your preferred monthly payment
+						</p>
+								</div>
+							</div>
+							<div class="teaser media topmargin_10">
+								<div class="media-left media-middle">
+									<div class="teaser_icon main_bg_color2 small_icon rounded">
+										<i class="fa fa-arrow-circle-o-up" aria-hidden="true"></i>
+									</div>
+								</div>
+								<div class="media-body media-middle">
+									<p class="fontsize_20">
+							Increase your payment amount anytime
+						</p>
+								</div>
+							</div>
+							<div class="teaser media topmargin_10">
+								<div class="media-left media-middle">
+									<div class="teaser_icon main_bg_color3 small_icon rounded">
+										<i class="fa fa-star" aria-hidden="true"></i>
+									</div>
+								</div>
+								<div class="media-body media-middle">
+									<p class="fontsize_20">
+							Make extra or early payments without fees
+						</p>
+								</div>
+							</div>
+							<div class="teaser media topmargin_10">
+								<div class="media-left media-middle">
+									<div class="teaser_icon main_bg_color4 small_icon rounded">
+										<i class="fa fa-plane" aria-hidden="true"></i>
+									</div>
+								</div>
+								<div class="media-body media-middle">
+									<p class="fontsize_20">
+							No fees, hidden or otherwise
+						</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section id="pricing" class="ls section_padding_top_130 section_padding_bottom_150">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-12 text-center">
+							<h2 class="section_header">
+								<span class="small">Personal</span>
+								Loan Comparison
+							</h2>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-lg-3 col-md-6">
+							<div class="with_border color_border rounded text-center">
+								<div class="main_bg_color with_padding small_padding">
+									<h4 class="margin_0">CashGo</h4>
+								</div>
+								<div class="with_padding">
+									APR range:
+									<p class="fontsize_24 bold highlight">5.95% – 6.99%</p>
+									<hr class="divider_30">
+									<p>
+							<strong>Fees:</strong><br>
+							No Fees
+						</p>
+									<p>
+							<strong>Fees:</strong><br>
+							3, 5, or 7 years
+						</p>
+									<p>
+							<strong>Amount:</strong><br>
+							$7,000 – $80,000
+						</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6">
+							<div class="with_border color2_border rounded text-center">
+								<div class="main_bg_color2 with_padding small_padding">
+									<h4 class="margin_0">Lending Club</h4>
+								</div>
+								<div class="with_padding">
+									APR range:
+									<p class="fontsize_24 bold highlight2">7.50% – 12.99%</p>
+									<hr class="divider_30">
+									<p>
+							<strong>Fees:</strong><br>
+							1 – 5% Origination Fee
+						</p>
+									<p>
+							<strong>Fees:</strong><br>
+							2, or 5 years
+						</p>
+									<p>
+							<strong>Amount:</strong><br>
+							$2,000 – $50,000
+						</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6">
+							<div class="with_border color3_border rounded text-center">
+								<div class="main_bg_color3 with_padding small_padding">
+									<h4 class="margin_0">Discover Loan</h4>
+								</div>
+								<div class="with_padding">
+									APR range:
+									<p class="fontsize_24 bold highlight3">8.00% – 15.49%</p>
+									<hr class="divider_30">
+									<p>
+							<strong>Fees:</strong><br>
+							No Fees
+						</p>
+									<p>
+							<strong>Fees:</strong><br>
+							1, 2, 3, 5, or 8 years
+						</p>
+									<p>
+							<strong>Amount:</strong><br>
+							$5,500 – $40,000
+						</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6">
+							<div class="with_border color4_border rounded text-center">
+								<div class="main_bg_color4 with_padding small_padding">
+									<h4 class="margin_0">Discover Loan</h4>
+								</div>
+								<div class="with_padding">
+									APR range:
+									<p class="fontsize_24 bold highlight4">9.00% – 14.49%</p>
+									<hr class="divider_30">
+									<p>
+							<strong>Fees:</strong><br>
+							3% Balance Transfer Fee
+						</p>
+									<p>
+							<strong>Fees:</strong><br>
+							Rolling
+						</p>
+									<p>
+							<strong>Amount:</strong><br>
+							Varies
+						</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<div id="testimonials" class="ds color page_testimonials parallax section_padding_top_150 section_padding_bottom_150">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-12">
+							<div class="owl-carousel testimonials-owl-dots" data-responsive-lg="3" data-responsive-md="3" data-responsive-sm="3" data-responsive-xs="3" data-center="true" data-loop="true" data-margin="10">
+								<div>
+									<img src="images\faces\01.jpg" alt="">
+								</div>
+								<div>
+									<img src="images\faces\03.jpg" alt="">
+								</div>
+								<div>
+									<img src="images\faces\04.jpg" alt="">
+								</div>
+
+							</div>
+
+							<div class="owl-carousel testimonials-owl-content topmargin_20" data-responsive-lg="1" data-responsive-md="1" data-responsive-sm="1" data-responsive-xs="1" data-loop="true" data-margin="0" data-dots="false" data-nav="false" data-touch-drag="false" data-mouse-drag="false">
+								<blockquote class="text-center topmargin_0">
+									<div class="item-meta">
+										<h4 class="bottommargin_0">Erica J. Myers</h4>
+										<p class="small-text grey">Client</p>
+									</div>
+									This has quite possibly been the best experience that I've had. I know I’m making progress and CashGo has given me the freedom to invest that money in other assets.
+								</blockquote>
+								<blockquote class="text-center topmargin_0">
+									<div class="item-meta">
+										<h4 class="bottommargin_0">Trent D. Gonzalez</h4>
+										<p class="small-text grey">Client</p>
+									</div>
+									My CashGo personal loan will save me thousands of dollars in interest. The application process was fast and effortless. This has quite possibly been the best experience that I've had.
+								</blockquote>
+								<blockquote class="text-center topmargin_0">
+									<div class="item-meta">
+										<h4 class="bottommargin_0">Cameron M. Velasco</h4>
+										<p class="small-text grey">Client</p>
+									</div>
+									I know I’m making progress and CashGo has given me the freedom to invest that money in other assets. This has quite possibly been the best experience that I've had—easy application process.
+								</blockquote>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<section id="news" class="ls section_padding_top_150 section_padding_bottom_130 columns_margin_bottom_30">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-3 col-md-4">
+							<h2 class="section_header">
+								<span class="small">Latest</span>
+								News
+							</h2>
+							<p>At vero eos et accusam et justo duo dolores et ea rebum. Stclita gubergren no sea takimata sanctus eipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing.</p>
+							<p class="topmargin_30">
+					<a href="blog-right.html" class="theme_button color1 wide_button">blog</a>
+				</p>
+						</div>
+						<div class="col-lg-9 col-md-8">
+							<div class="owl-carousel" data-nav="false" data-dots="false" data-responsive-lg="3" data-responsive-md="2">
+								<article class="vertical-item content-padding with_border color2_border rounded text-center">
+									<div class="item-media rounded overflow_hidden bottommargin_30">
+										<img src="images\gallery\square\01.jpg" alt="">
+										<div class="media-links color">
+											<a href="blog-single-right.html" class="abs-link"></a>
+										</div>
+										<div class="cs main_color2 entry-meta media-meta text-center">
+											<div>
+												<span class="date">17</span>
+												<span class="small-text">jul</span>
+											</div>
+											<div class="side-media-links">
+												<a class="prettyPhoto" title="" data-gal="prettyPhoto[gal]" href="images\gallery\01.jpg">
+													<i class="fa fa-eye" aria-hidden="true"></i>
+												</a>
+												<a href="blog-single-right.html">
+													<i class="fa fa-star" aria-hidden="true"></i>
+												</a>
+												<a href="blog-single-right.html">
+													<i class="fa fa-share" aria-hidden="true"></i>
+												</a>
+											</div>
+										</div>
+									</div>
+									<div class="item-content">
+										<h4 class="entry-title hover-color2">
+											<a href="blog-single-right.html">Top 8 Easy Ways to Get Rapid Cash</a>
+										</h4>
+										<div class="entry-content">
+											<p>There may be any number of reasons why you need some cash in hand quickly.</p>
+										</div>
+									</div>
+									<footer class="highlight2links small-text semibold">
+										<a href="blog-single-right.html">read more</a>
+									</footer>
+								</article>
+								<article class="vertical-item content-padding with_border color3_border rounded text-center">
+									<div class="item-media rounded overflow_hidden bottommargin_30">
+										<img src="images\gallery\square\03.jpg" alt="">
+										<div class="media-links color3">
+											<a href="blog-single-right.html" class="abs-link"></a>
+										</div>
+										<div class="cs main_color3 entry-meta media-meta text-center">
+											<div>
+												<span class="date">09</span>
+												<span class="small-text">jul</span>
+											</div>
+											<div class="side-media-links">
+												<a class="prettyPhoto" title="" data-gal="prettyPhoto[gal]" href="images\gallery\03.jpg">
+													<i class="fa fa-eye" aria-hidden="true"></i>
+												</a>
+												<a href="blog-single-right.html">
+													<i class="fa fa-star" aria-hidden="true"></i>
+												</a>
+												<a href="blog-single-right.html">
+													<i class="fa fa-share" aria-hidden="true"></i>
+												</a>
+											</div>
+										</div>
+									</div>
+									<div class="item-content">
+										<h4 class="entry-title hover-color3">
+											<a href="blog-single-right.html">How do Title Loans Actually Work?</a>
+										</h4>
+										<div class="entry-content">
+											<p>When you need money right away and no help is available from a family...</p>
+										</div>
+									</div>
+									<footer class="highlight3links small-text semibold">
+										<a href="blog-single-right.html">read more</a>
+									</footer>
+								</article>
+								<article class="vertical-item content-padding with_border color4_border rounded text-center">
+									<div class="item-media rounded overflow_hidden bottommargin_30">
+										<img src="images\gallery\square\02.jpg" alt="">
+										<div class="media-links color">
+											<a href="blog-single-right.html" class="abs-link"></a>
+										</div>
+										<div class="cs main_color4 entry-meta media-meta text-center">
+											<div>
+												<span class="date">02</span>
+												<span class="small-text">jul</span>
+											</div>
+											<div class="side-media-links">
+												<a class="prettyPhoto" title="" data-gal="prettyPhoto[gal]" href="images\gallery\02.jpg">
+													<i class="fa fa-eye" aria-hidden="true"></i>
+												</a>
+												<a href="blog-single-right.html">
+													<i class="fa fa-star" aria-hidden="true"></i>
+												</a>
+												<a href="blog-single-right.html">
+													<i class="fa fa-share" aria-hidden="true"></i>
+												</a>
+											</div>
+										</div>
+									</div>
+									<div class="item-content">
+										<h4 class="entry-title hover-color4">
+											<a href="blog-single-right.html">Creative Cash Flow Options</a>
+										</h4>
+										<div class="entry-content">
+											<p>A common barrier to starting business securing the funding needed...</p>
+										</div>
+									</div>
+									<footer class="highlight4links small-text semibold">
+										<a href="blog-single-right.html">read more</a>
+									</footer>
+								</article>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<footer class="page_footer ds color section_padding_top_100 section_padding_bottom_10">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-12 text-center">
+							<a href="index.htm" class="logo vertical_logo">
+								<img src="images\logo-vertical.png" alt="">
+							</a>
+							<ul class="topmargin_40 inline-content small-text semibold darklinks">
+								<li>
+									<a href="#0" class="soc-facebook text-icon">Facebook</a>
+								</li>
+								<li>
+									<a href="#0" class="soc-twitter text-icon">Twitter</a>
+								</li>
+								<li>
+									<a href="#0" class="soc-instagram text-icon">Instagram</a>
+								</li>
+								<li>
+									<a href="#0" class="soc-google text-icon">Google</a>
+								</li>
+								<li>
+									<a href="#0" class="soc-youtube text-icon">Youtube</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</footer>
+
+			<section class="ds color page_copyright section_padding_top_40 section_padding_bottom_40 with_top_border_container">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-12 text-center">
+							<p>&copy; Copyright 2017. All Rights Reserved.</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+		</div>
+		<!-- eof #box_wrapper -->
+	</div>
+	<!-- eof #canvas -->
+
+	<script src="js\compressed.js"></script>
+	<script src="js\main.js"></script>
+	<script src="js\switcher.js"></script>
+
+</body>
+
+</html>
