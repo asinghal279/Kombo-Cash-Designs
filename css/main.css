@@ -18471,7 +18471,7 @@ label {
 }
 .border-pink-1
 {
-	border: 1px solid #294186 !important;
+	border: 1px solid #b81f6f !important;
 }
 .border-grey-1{
 	border: 1px solid #d6d5d5 !important;
@@ -18836,9 +18836,9 @@ label {
 	padding-bottom: 15px;
 }
 .border-table{
-	//border-bottom: 3px solid #eaeaea !important;
-	border-left: 3px solid #eaeaea !important;
-	border-right: 3px solid #eaeaea !important;
+	/*//border-bottom: 3px solid #eaeaea !important;*/
+	border-left: 1px solid #eaeaea !important;
+	border-right: 1px solid #eaeaea !important;
 
 	border-style: ;
 }
@@ -19042,18 +19042,19 @@ img {
 
 /* user menu settings */
 #dropdown { 
-  background-color: white;
-    border: 2px solid #3a78bd;
+    background: url("../images/team/03.jpg");
+    background-size: 100%;
+    /*border: 2px solid #3a78bd;*/
     border-radius: 35px;
     font-size: 19px;
     color: #3a78bd;
     display: block;
-    padding: 15px 22px;
+    padding: 30px 30px;
     margin: 0 auto;
     position: relative;
     cursor: pointer;
     /* border-left: 4px solid #739cda; */
-    background: #fff;
+    /*background: #fff;*/
     font-size: 2.2em;
     color: #337ab7;
     font-weight: normal;
@@ -19069,13 +19070,15 @@ img {
 #dropdown:hover { color: #898989; }
 
 #dropdown.open {
-  background: #5a90e0;
-  color: #fff;
+  /*background: #5a90e0;*/
+  /*color: #fff;*/
   /*//border-left-color: #6c6d70;*/
 }
 
 #dropdown ul { 
+	border-radius: 5px;
   position: absolute;
+  text-align: left;
   top: 100%;
   left: -4px; /* move content -4px because of container left border */
   /*width: 266px;*/
