@@ -102,11 +102,11 @@
                                              <a href="user-contact.html">Contact Us</a>
                                           </li>
                                           <li>
-                                             <a href="notifications.html" class="rt-icon2-bell border-0 margin-bottom-0"></a>
+                                             <a href="notifications.html" class="rt-icon2-bell border-0 margin-bottom-0 font-size-28"></a>
                                           </li>
                                           <li>
                                              <!-- <a href="profile.html" class="rt-icon2-user3 border-0 margin-bottom-0"></a> -->
-                                             <div id="dropdown" class="ddmenu rt-icon2-user3 border-0 margin-bottom-0">
+                                             <div id="dropdown" class="ddmenu rt-icon2-user3 margin-bottom-0">
                                                 Profile
                                                 <ul>
                                                   <li><a href="profile.html">My Profile</a></li>
@@ -153,31 +153,31 @@
                         </div> -->
                         <div class="col-sm-2 border-right cursor-pointer" id="vehicle">
                            <a href="#" class="amount-icon fas fa-car"></a>
-                           <h6 class="text-uppercase">
-                           vehicle
+                           <h6 class="">
+                           Vehicle
                         </h6>
                         </div>
                         <div class="col-sm-2 border-right cursor-pointer" id="rent">
                            <a href="#" class="amount-icon fas fa-house-damage" ></a>     
-                           <h6 class="text-uppercase">
+                           <h6 class="">
                            Rent
                         </h6>                      
                         </div>
                         <div class="col-sm-2 border-right cursor-pointer" id="student">
                            <a href="#" class="amount-icon fas fa-user-graduate"></a> 
-                           <h6 class="text-uppercase">
+                           <h6 class="">
                            Student Fee
                         </h6>
                         </div>
                         <div class="col-sm-2 border-right cursor-pointer" id="medical">
                            <a href="#" class="amount-icon fas fa-notes-medical" ></a> 
-                           <h6 class="text-uppercase">
+                           <h6 class="">
                            Medical Fee
                         </h3>
                         </div>
                         <div class="col-sm-2 border-right cursor-pointer" id="land">
                            <a href="#" class="amount-icon fas fa-landmark"></a> 
-                           <h6 class="text-uppercase">
+                           <h6 class="">
                            Land
                         </h6>
                         </div>
@@ -197,7 +197,7 @@
                         </div>        
                      </div>
                     <div class="col-sm-12 padding-right-0 padding-left-0 margin-bottom-0 margin-top-0 background-white">
-                       <h3 class="margin-bottom-0 color-blue font-weight-300 padding-15 margin-top-0 padding-left-98"><span class="font-weight-0"> <i class="fas fa-history font-weight-0 font-size-30"></i></span>&nbsp;Loan History</h3>
+                       <h3 class="margin-bottom-0 color-blue font-weight-300 padding-15 margin-top-0 padding-left-98 padding-top-45"><span class="font-weight-0"> <i class="fas fa-history font-weight-0 font-size-30"></i></span>&nbsp;Loan History</h3>
                     </div>
                         
                        
@@ -205,7 +205,7 @@
                      <div class="col-sm-12 background-white margin-top-0 margin-bottom-0 padding-right-100 padding-left-100">
                      <table class="table table-striped background-white font-size-14 margin-top-0 border-table margin-bottom-0 ">
                         <thead>
-                           <tr>
+                           <tr class="color-table-header">
                               <th>ID</th>
                               <th>Category</th>
                               <th>Amount</th>
@@ -397,10 +397,11 @@
 
                   $("#dropdown").on("click", function(e){
   
-  if($(this).hasClass("open") ) {
+  if
+   ($(this).hasClass("open") ) {
    
     $(this).removeClass("open");
-    $(this).children("ul").slideUp("fast");
+    $(this).children("ul").slideUp("fast");}
  else {
     $(this).addClass("open");
     $(this).children("ul").slideDown("fast");
