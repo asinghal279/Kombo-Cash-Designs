@@ -99,21 +99,21 @@
                                              <a href="user-faq.html">FAQ's</a>
                                           </li>
                                           <li>
-                                             <a href="user-contact.html">Contact Us</a>
+                                             <a href="user-contact.html">Contact</a>
                                           </li>
                                           <li>
-                                             <a href="#" class="rt-icon2-bell border-0 margin-bottom-0 font-size-28"></a>
+                                             <a href="#" class="far fa-bell border-0 margin-bottom-0 font-size-28"></a>
                                           </li>
                                           <li>
                                              <!-- <a href="profile.html" class="rt-icon2-user3 border-0 margin-bottom-0"></a> -->
-                                             <div id="dropdown" class="ddmenu border-pink-1 margin-bottom-0">
+                                             <div id="dropdown" class="ddmenu margin-bottom-0">
                                                 <!-- <img src="images/team/03.jpg"> -->
                                                 <ul>
                                                   <li><a href="profile.html">My Profile</a></li>
                                                   
                                                   <li><a href="settings.html">Account Settings</a></li>
                                                 
-                                                  <li><a href="homepage.html">Log Out</a></li>
+                                                  <li><a href="homepage.html">Sign out</a></li>
                                                 </ul>
                                               </div>
                                           </li>
@@ -194,10 +194,18 @@
 
                                  <form>
                                     <div class="form-group">
-                                       <label class="col-md-4 control-label">New Password</label>
+                                       <label class="col-md-4 control-label padding-top-12">Old Password</label>
+                                        <div class="col-md-6">
+
+                                         <input id="password-field" type="password" class="form-control sign-in-field" name="password">
+                                         <span toggle="#password-field" class="fa fa-fw fa-eye field-icon toggle-password margin-right-5"></span>
+                                         
+                                       </div>
+                                       <label class="col-md-4 control-label padding-top-12">New Password</label>
                                        <div class="col-md-6">
-                                         <input id="password-field" type="password" class="form-control settings-input" name="password">
-                                         <span toggle="#password-field" class="fa fa-fw fa-eye field-icon toggle-password"></span>
+
+                                         <input id="password-field" type="password" class="form-control sign-in-field" name="password">
+                                         <span toggle="#password-field" class="fa fa-fw fa-eye field-icon toggle-password margin-right-5"></span>
                                          <input type="submit" name="change-password-submit" class="change-password-submit padding-10">
                                        </div>
                                      </div>
@@ -219,8 +227,11 @@
                                        <p class="col-md-7 font-size-18 text-right">Enable Notifications</p>
                                        <div class="col-md-5 margin-bottom-0 text-left">
 
-                                         <input id="password-field" type="radio" class="text-left form-control enable-notification margin-top-0" name="password">
+                                         <input id="password-field" type="checkbox" class="text-left form-control enable-notification margin-top-0" name="password" data-toggle="toggle">
+
+
                                        </div>
+
                                      </div>
                                  </form>
                               
@@ -234,12 +245,13 @@
 
                                  <form>
                                     <div class="form-group">
-                                       <p class="col-md-10 font-size-18 text-right">I hereby, accept that I want to delete my account.</p>
-                                       <div class="col-md-2 margin-bottom-0 text-left">
+                                       <div class="col-md-1 margin-bottom-0 text-left margin-top-10">
 
                                          <input id="" type="checkbox" class="form-control enable-notification margin-top-0" name="password" required/>
 
                                        </div>
+                                       <p class="col-md-11 font-size-18 text-left padding-left0">I hereby, accept that I want to delete my account.</p>
+                                       
                                        <input type="submit" name="delete-account-submit" class="text-right pull-right change-password-submit padding-10">
                                      </div>
                                  </form>
@@ -250,41 +262,11 @@
                               </div>  
 
                         </div>
-                        <div class="tab-pane fade" id="vertical-tab4">
-                           <h3 class="poppins">No sea takimata sanctus est?</h3>
-                           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusantium impedit asperiores illum nulla sint itaque laborum perferendis deleniti quo cumque, quisquam repudiandae molestias sunt ea delectus porro odio recusandae!</p>
-                           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus omnis quod eligendi mollitia vel optio neque id, assumenda! Quae at quisquam eum, dolorum ullam, maxime nesciunt ex modi minus illum!</p>
-                           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error quia, ad natus corrupti inventore mollitia, dolor omnis nesciunt, molestias officiis eum debitis dolore. Minima magnam odit cupiditate labore accusantium eaque!</p>
-                           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi minus tenetur sunt aspernatur vitae, corporis nostrum quibusdam molestias, laudantium quia in a natus facilis beatae culpa inventore quidem illo atque.</p>
-                        </div>
-                        <div class="tab-pane fade" id="vertical-tab5">
-                           <h3 class="poppins">At vero eos et accusam?</h3>
-                           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error quia, ad natus corrupti inventore mollitia, dolor omnis nesciunt, molestias officiis eum debitis dolore. Minima magnam odit cupiditate labore accusantium eaque!</p>
-                           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi minus tenetur sunt aspernatur vitae, corporis nostrum quibusdam molestias, laudantium quia in a natus facilis beatae culpa inventore quidem illo atque.</p>
-                           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error quia, ad natus corrupti inventore mollitia, dolor omnis nesciunt, molestias officiis eum debitis dolore. Minima magnam odit cupiditate labore accusantium eaque!</p>
-                           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi minus tenetur sunt aspernatur vitae, corporis nostrum quibusdam molestias, laudantium quia in a natus facilis beatae culpa inventore quidem illo atque.</p>
-                        </div>
-                        <div class="tab-pane fade" id="vertical-tab6">
-                           <h3 class="poppins">Justo duo dolores et ea rebum?</h3>
-                           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit voluptate, quas fugit facere possimus facilis odio delectus laborum id nobis expedita vitae molestiae a. Magnam aliquid architecto magni, quos omnis.</p>
-                           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est, enim saepe libero iure tenetur optio nisi aliquam molestias ratione magnam ab ut quod possimus hic suscipit doloremque, deleniti ipsa quia!</p>
-                           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error quia, ad natus corrupti inventore mollitia, dolor omnis nesciunt, molestias officiis eum debitis dolore. Minima magnam odit cupiditate labore accusantium eaque!</p>
-                           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi minus tenetur sunt aspernatur vitae, corporis nostrum quibusdam molestias, laudantium quia in a natus facilis beatae culpa inventore quidem illo atque.</p>
-                        </div>
-                        <div class="tab-pane fade" id="vertical-tab7">
-                           <h3 class="poppins">Stet clita kasd gubergren?</h3>
-                           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque repellat, reiciendis sint officia quia iure nam! Dicta omnis ex ipsa fugiat maiores, vero expedita facilis, suscipit quam obcaecati veniam voluptate.</p>
-                           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis est, dolores, ex ducimus cumque iusto ipsam odit voluptatum autem error impedit obcaecati quisquam molestiae, optio porro inventore nostrum deleniti cupiditate.</p>
-                           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error quia, ad natus corrupti inventore mollitia, dolor omnis nesciunt, molestias officiis eum debitis dolore. Minima magnam odit cupiditate labore accusantium eaque!</p>
-                           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi minus tenetur sunt aspernatur vitae, corporis nostrum quibusdam molestias, laudantium quia in a natus facilis beatae culpa inventore quidem illo atque.</p>
-                        </div>
-                        <div class="tab-pane fade" id="vertical-tab8">
-                           <h3 class="poppins">No sea takimata sanctus est?</h3>
-                           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusantium impedit asperiores illum nulla sint itaque laborum perferendis deleniti quo cumque, quisquam repudiandae molestias sunt ea delectus porro odio recusandae!</p>
-                           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus omnis quod eligendi mollitia vel optio neque id, assumenda! Quae at quisquam eum, dolorum ullam, maxime nesciunt ex modi minus illum!</p>
-                           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error quia, ad natus corrupti inventore mollitia, dolor omnis nesciunt, molestias officiis eum debitis dolore. Minima magnam odit cupiditate labore accusantium eaque!</p>
-                           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi minus tenetur sunt aspernatur vitae, corporis nostrum quibusdam molestias, laudantium quia in a natus facilis beatae culpa inventore quidem illo atque.</p>
-                        </div>
+                        
+                        
+                        
+                        
+                        
                      </div>
 
                   </div>

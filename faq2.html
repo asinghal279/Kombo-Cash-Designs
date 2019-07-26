@@ -27,22 +27,43 @@
                <div class="col-sm-12 sign_in text-center margin-top-0" id="sign_in">
               
 
-               <div class="col-sm-4 form-group padding-bottom-20 sign-in-form font-20" id="sign-in-form">
-                  <div class="col-sm-12 cross text-right cursor-pointer margin-top-0 padding-right-33" id="cut">
-                  <i class="far fa-times-circle text-right"></i>
+                <div class="col-sm-4 form-group padding-bottom-20 sign-in-form font-20 background-white" id="sign-in-form">
+                  <div class="col-sm-12 cross text-right cursor-pointer margin-top-0 padding-right-38" id="cut">
+                  <i class="fas fa-times text-right"></i>
                   </div>
 
                   <img class="width-60" src="images\horizontal2.png" alt="">
-                 <h3 class="margin-top-0">Sign-In</h3>
-                  <input class="form-control sign-in-field border-color-black" type="text" name="username" placeholder="E-mail/Username"/>  <br>
-                  <input class="form-control sign-in-field border-color-black" type="password" name="password" placeholder="Password"/>
-                  <div class="col-sm-12 text-right padding-top-6 padding-right-0 margin-top-0 padding-top-0 font-14" id="otp-submit"><a class="forgot" href="#">Forgot Password</a></div>
-                   <a href="dashboard.html"><button class="signup_button" id="signin_button">Sign In</button></a>
+                 <h3 class="margin-top-0">Welcome !</h3>
+                 <form action="dashboard.html">
+                  <input class="form-control sign-in-field border-color-black" type="email" name="username" placeholder="E-mail/Username" required />  <br>
+                  <input class="form-control sign-in-field border-color-black" type="password" name="password" placeholder="Password" id="pass" required />
+                  <span toggle="#pass" class="fa fa-fw fa-eye field-icon toggle-password color-black font-size-18 margin-right-5"></span>
+                  <div class="col-sm-12 text-right padding-top-6 padding-right-0 padding-top-0 font-14" id="forgot-password-button"><a class="forgot" href="#">Forgot Password ?</a></div>
+                   <a href="dashboard.html"><button class="theme_button color1 wide_button padding10-30" id="signin_button">Sign in</button></a>
+                </form>
                </div>
-               <div class="form-group forgot-password" id="forgot-password">
-                  <h5>Please Enter the OTP</h5>
-                  <input class="form-control contact-form-2 border-color-black" type="text" name="username" placeholder="OTP"/>
-                  <a href="change-password.html"><button class="signup_button margin-top-60">Submit</button></a>
+               <div class="col-sm-4 form-group forgot-password padding-bottom-20 sign-in-form padding-top-0 font-20 background-white" id="forgot-password-email">
+                  <div class="col-sm-12 cross text-right cursor-pointer margin-top-0 padding-right-38" id="cut">
+                  <i class="fas fa-times text-right"></i>
+                  </div>
+                 <h3 class="">Forgot Password</h3>
+                 <h6>Please enter your registered Email ID</h6>
+                 
+                  <input class="form-control sign-in-field border-color-black" type="email" name="username" placeholder="E-mail" required />  <br>
+                   <a><button class="theme_button color1 wide_button padding10-30" id="forgot-password-email-button">Submit</button></a>
+                
+               </div>
+               <div class="col-sm-4 form-group forgot-password padding-bottom-20 sign-in-form padding-top-0 font-20 background-white" id="forgot-password">
+                  <div class="col-sm-12 cross text-right cursor-pointer margin-top-0 padding-right-38" id="cut">
+                  <i class="fas fa-times text-right"></i>
+                  </div>
+                 <h3 class="">Forgot Password</h3>
+                 <h6>Please enter the OTP sent to your Email Id</h6>
+                 
+                  <input class="form-control sign-in-field" type="number" name="otp" placeholder="OTP" required /> 
+                  <div class="col-sm-12 text-right padding-top-6 padding-right-0 padding-top-0 font-14" id="forgot-password-button"><a class="forgot" href="#">Resend OTP</a></div>
+                   <a href="change-password.html"><button class="theme_button color1 wide_button padding10-30" id="signin_button">Submit</button></a>
+              
                </div>
             </div>      
              <div class="header_top secondary-bg ">
@@ -142,14 +163,14 @@
                                              <a href="faq2.html">FAQ's</a>
                                           </li>
                                           <li>
-                                             <a href="contact4.html">Contact Us</a>
+                                             <a href="contact4.html">Contact</a>
                                           </li>
                                           
                                           <li>
                                              <!-- <a href="blog-right.html">Sign In</a> -->
                                              <div class="col-sm-4">
                                                 <div class="loan-form-submit">
-                                                   <button type="submit" id="loan_form_submit" name="loan_submit" class="theme_button color1 wide_button">Sign IN</button>
+                                                   <button type="submit" id="sign-in-button" name="loan_submit" class="theme_button color1 wide_button padding10-30">Sign IN</button>
                                                 </div>
                                              </div>
                                           </li>
@@ -172,19 +193,11 @@
                         </div>
                      </header>   
 
-                     <section class="page_breadcrumbs ds color parallax section_padding_top_75 section_padding_bottom_75">
-				<div class="container">
-					<div class="row">
-						<div class="col-sm-12 text-center">
-							<h2 class="">FAQ's</h2>
-							
-						</div>
-					</div>
-				</div>
-			</section>
+                    
 
-			<section class="ls section_padding_100 columns_padding_25">
+			<section class="ls columns_padding_25">
 				<div class="container">
+                <h1 class="text-center color-black">FAQ's</h1>
 					<div class="row vertical-tabs">
 						<div class="col-sm-5">
 
@@ -226,7 +239,7 @@
 							<!-- Tab panes -->
 							<div class="tab-content no-border font-14">
 								<div class="tab-pane fade in active" id="vertical-tab1">
-									<h3 class="poppins">At vero eos et accusam?</h3>
+									<h3 class="poppins">When is my next EMI due? How can I view my EMI Status?</h3>
 									<p>The EMI due date is 2nd or 5th of every month. To view your EMI Status, log in to the customer portal and from the homepage itself you will see your Active Loans. On the right there is a View Details button. Clicking on that will provide you detailed information of your loan account and you can Download your Account Statement, View Charges and Check your Repayment Schedule from here.<br>
 Please ensure you maintain an adequate balance in your bank account a day prior to the due date. In the event of non-realization of EMI on due date, Bounce Charges will be applicable on the unpaid installment in addition to Late Payment Charges.</p>
 								</div>
@@ -290,39 +303,86 @@ Please ensure you maintain an adequate balance in your bank account a day prior 
 			</section>
 
 
-			 <footer class="page_footer ds">
-                        <div class="container">
-                           <div class="row">
-                              
-                              <div class="col-sm-12 text-center">
-                                 <a href="index.htm" class="col-sm-4 logo vertical_logo ">
-                                 <img src="images\horizontal2.png" class="max-width margin-0 margin-bottom-0" alt="">
-                                 </a>
-                                 
-                                 <ul class="col-sm-8 line-height-6 inline-content font-size-18 semibold darklinks margin-bottom-0">
-                                    <li>
-                                       <a href="#0" class="padding-left-0 padding-right-0 footer-color ">About</a>
-                                    </li>
-                                    <li>
-                                       <a href="#0" class="padding-left-0 padding-right-0 footer-color ">Terms & Conditions</a>
-                                    </li>
-                                    <li>
-                                       <a href="#0" class="padding-left-0 padding-right-0 footer-color ">Privacy Policy</a>
-                                    </li>
-                                    <li>
-                                       <a href="#0" class="padding-left-0 padding-right-0 footer-color ">Cookie Policy</a>
-                                    </li>
-                                 </ul>
-                                 <div class="col-sm-12 text-center padding-0 margin-top-0">
-                                 <p class="font-16">Kombo Cash intends to change the way credit is delivered in India by harnessing the power of technology and digital platform.
-                                    Our unique model is built on the premise that when information is transparently made available to both borrowers and lenders, decision making is simple and noise free.
-                                 </p>
+			  <footer class="page_footer ds section_padding_top_50 section_padding_bottom_65 columns_padding_25 table_section">
+            <div class="container padding-0 padding-top-5">
+               <div class="row font-14">
+                  <div class="col-md-4 col-sm-12 text-left">
+                     <div class="widget widget_text">
+                        <a href="index.htm" class="logo vertical_logo">
+                           <img src="images\horizontal1.png" class="max-width" alt="">
+                        </a>
+
+                        <p class="">Kombo Cash actively pursues its mission of supporting healthy and productive lifestyles for the community while teaching, enhancing, and connecting residents and youth to fresh produce and education about urban gardening.</p>
+
+                      
+                     </div>
+                  </div>
+                  <div class="col-md-4 col-sm-6 text-left">
+                     <div class="widget widget_text widget_media_margin">
+                        <h3 class="widget-title margin-bottom-21 color-blue-grey font-20">Explore</h3>
+                        <ul class="list1 no-bullets no-top-border no-bottom-border greylinks">
+                           <li class="padding-top-5 padding-bottom-5 margin-bottom-0 margin-top-0">
+                              <a href="#">About Us</a>
+                           </li>
+                           <li class="padding-top-5 padding-bottom-5 margin-bottom-0 margin-top-0">
+                              <a href="#">Terms and Conditions</a>
+                           </li>
+                           <li class="padding-top-5 padding-bottom-5 margin-bottom-0 margin-top-0">
+                              <a href="#">Cookie Policy</a>
+                           </li>
+                           <li class="padding-top-5 padding-bottom-5 margin-bottom-0 margin-top-0">
+                              <a href="#">Privacy Policy</a>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+                  <div class="col-md-4 col-sm-6 left">
+                     <div class="widget widget_mailchimp widget_media_margin">
+                        <h3 class="widget-title margin-bottom-21 color-blue-grey font-20">Newsletter</h3>
+                          
+
+                     <ul class="list1 no-bullets no-top-border no-bottom-border">
+
+                        <li class="padding-0">
+                           <div class="media">
+                              <div class="media-left">
+                                 <i class="rt-icon2-shop highlight2 color-pink"></i>
                               </div>
+                              <div class="media-body">
+                                 <!-- <h6 class="media-heading color-blue-grey">Postal Address:</h6> -->
+                                 PO Box 97845 Some str. 567, Los Angeles, California, United States
                               </div>
                            </div>
-                        </div>
-                     </footer>
-                      <section class="ds color page_copyright section_padding_top_40 section_padding_bottom_40 with_top_border_container">
+                        </li>
+                        <li class="padding-0">
+                           <div class="media">
+                              <div class="media-left">
+                                 <i class="rt-icon2-phone5 highlight2 color-pink"></i>
+                              </div>
+                              <div class="media-body">
+                                 <!-- <h6 class="media-heading color-blue-grey">Phone:</h6> -->
+                                 8(800) 123-12345
+                              </div>
+                           </div>
+                        </li>
+                        <li class="padding-0">
+                           <div class="media">
+                              <div class="media-left">
+                                 <i class="rt-icon2-mail highlight2 color-pink"></i>
+                              </div>
+                              <div class="media-body greylinks">
+                                 <!-- <h6 class="media-heading color-blue-grey">Email:</h6> -->
+                                 <a href="mailto:your@mail.com">komboCash@example.com</a>
+                              </div>
+                           </div>
+                        </li>
+                     </ul>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </footer>
+                     <section class="ds color page_copyright with_top_border_container">
                         <div class="container">
                            <div class="row">
                               <div class="col-sm-12 text-center">
@@ -340,28 +400,53 @@ Please ensure you maintain an adequate balance in your bank account a day prior 
 
 	<script src="js\compressed.js"></script>
 	<script src="js\main.js"></script>
-	 <script type="text/javascript">
-                  $('#sign-in-button').click(function(){
-                  
-                  $('#sign_in').fadeIn({queue: false, duration: 'slow'});
-
-
-      })
+	  <script type="text/javascript">
                    $('.cross').click(function(){
-                 
-                  $('#sign_in').fadeOut({queue: false, duration: 'slow'});
+                 // if()
+                  $('#sign-in-form,#sign_in,#forgot-password,#forgot-password-email').hide();
+               
+                // check paragraph once toggle effect is completed
+                // if($("#sign_in").is(":visible")){
+                    // $("#sign_in").hide();
+                // }
                   
 
       })
+                  $('#sign-in-button').click(function(){
+                     // $('#sign_in').toggle();
+                  $('#sign-in-form').show();
+                  $('#sign_in').fadeIn();
 
-                   $('#otp-submit').click(function(){
-         $('#forgot-password').fadeIn({queue: false, duration: 'slow'});
-        $('#sign-in-form').fadeOut( {queue: false, duration: 'slow'});
-         $('#sign-in-form').animate({ 'left': "-700px" }, 'slow');
-          //$('#sign-in-form').hide();
-         
 
       })
+                  
+
+                   $('#forgot-password-button').click(function(){
+         $('#forgot-password-email').fadeIn();
+        $('#sign-in-form').fadeOut();
+         // $('#sign-in-form').animate({ 'left': "-700px" }, 'slow');
+
+      })
+
+                      $('#forgot-password-email-button').click(function(){
+         $('#forgot-password').fadeIn();
+        $('#forgot-password-email').fadeOut();
+         // $('#forgot-password-email').animate({ 'left': "-700px" }, 'slow');
+
+      })
+
+         $(".toggle-password").click(function() {
+
+  $(this).toggleClass("fa-eye fa-eye-slash");
+  var input = $($(this).attr("toggle"));
+  if (input.attr("type") == "password") {
+    input.attr("type", "text");
+  } else {
+    input.attr("type", "password");
+  }
+});
+
+
                </script>
 
 </body>
